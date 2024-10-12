@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Products</title>
+</head>
+<body>
+    <h1>Top Products</h1>
+
+    <!-- Top 5 Products Overall -->
+    <h2>Top 5 Products Overall</h2>
+    <ul>
+        {% for product in top_products_overall %}
+            <li>{{ product[0] }}: ${{ "%.2f" | format(product[1]) }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Top 5 Products by Branch -->
+    <h2>Top Products by Branch</h2>
+    <ul>
+        {% for branch, product_name, total_sales in top_products_by_branch %}
+            <li>{{ branch }}: {{ product_name }} - ${{ "%.2f" | format(total_sales) }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Top 5 Herbicides -->
+    <h2>Top 5 Herbicides</h2>
+    <ul>
+        {% for product in top_herbicides %}
+            <li>{{ product[0] }}: ${{ "%.2f" | format(product[1]) }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Top 5 Fungicides -->
+    <h2>Top 5 Fungicides</h2>
+    <ul>
+        {% for product in top_fungicides %}
+            <li>{{ product[0] }}: ${{ "%.2f" | format(product[1]) }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Top 5 Insecticides -->
+    <h2>Top 5 Insecticides</h2>
+    <ul>
+        {% for product in top_insecticides %}
+            <li>{{ product[0] }}: ${{ "%.2f" | format(product[1]) }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Link to return to dashboard -->
+    <a href="/">Back to Dashboard</a>
+</body>
+</html>
