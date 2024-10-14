@@ -13,7 +13,7 @@ function initViz() {
 
     console.log("Container found. Attempting to load Tableau Viz from URL:", url);
 
-    // Options for embedding (e.g., hiding tabs)
+
     let options = {
         hideTabs: true,
         onFirstInteractive: function () {
@@ -22,7 +22,7 @@ function initViz() {
     };
 
     try {
-        // Initialize Tableau visualization
+    
         viz = new tableau.Viz(containerDiv, url, options);
         console.log("Tableau Viz initialized.");
     } catch (error) {
@@ -30,5 +30,4 @@ function initViz() {
     }
 }
 
-// Call the function when the page finishes loading
 window.onload = initViz;
