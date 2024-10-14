@@ -4,7 +4,6 @@ anyio==4.4.0
 astunparse==1.6.3
 beautifulsoup4==4.12.3
 blinker==1.8.2
-boto3 @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_30v3wf5u3w/croot/boto3_1723129058177/work
 botocore @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_0eprl9bmof/croot/botocore_1722996036777/work
 Bottleneck @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_cfe9itj_y_/croot/bottleneck_1707864223016/work
 Brotli @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_67j4p18ie3/croot/brotli-split_1714483158198/work
